@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect } from "react";
 
 type NavigateFn = (path: string, options?: { replace?: boolean }) => void;
 
@@ -7,7 +7,6 @@ type LandingProps = {
 };
 
 export default function Landing({ navigateFn }: LandingProps) {
-  const [isDark, setIsDark] = useState(true); // force dark (black theme)
 
   useEffect(() => {
     document.documentElement.classList.add("dark");
